@@ -1,6 +1,7 @@
 package com.example.kafka_demo.producerTest;
 
 import com.example.kafka_demo.Partitioner.CustomPartitioner;
+import lombok.SneakyThrows;
 import org.apache.kafka.clients.producer.*;
 import org.apache.kafka.common.serialization.StringSerializer;
 import org.junit.jupiter.api.Test;
@@ -91,7 +92,7 @@ class CustomProducer {
         try {
             //send訊息
             for (int i = 1; i <= 10; i++) {
-                kafkaProducer.send(new ProducerRecord<>("first", 2, "", "hello " + i), new Callback() {
+                kafkaProducer.send(new ProducerRecord<>("first", 0, "", "hello partition " + i), new Callback() {
                     @Override
                     public void onCompletion(RecordMetadata recordMetadata, Exception e) {
                         if (e == null) {
@@ -143,6 +144,7 @@ class CustomProducer {
 
 
     @Test
+    @SneakyThrows
     public void producerParameter() {
         //設定
         Properties properties = new Properties();
@@ -166,7 +168,7 @@ class CustomProducer {
 
         try {
             //send訊息
-            for (int i = 1; i <= 10; i++) {
+            for (int i = 1; i <= 500; i++) {
                 kafkaProducer.send(new ProducerRecord<>("first", "hello " + i), new Callback() {
                     @Override
                     public void onCompletion(RecordMetadata recordMetadata, Exception e) {
@@ -175,6 +177,7 @@ class CustomProducer {
                         }
                     }
                 });
+                Thread.sleep(5);
             }
         } finally {
             //關閉
