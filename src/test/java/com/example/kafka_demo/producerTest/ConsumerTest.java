@@ -31,9 +31,9 @@ public class ConsumerTest {
       properties.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName());
       properties.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName());
 
-      properties.put(ConsumerConfig.PARTITION_ASSIGNMENT_STRATEGY_CONFIG, "org.apache.kafka.clients.consumer.RoundRobinAssignor");
+      properties.put(ConsumerConfig.PARTITION_ASSIGNMENT_STRATEGY_CONFIG, "org.apache.kafka.clients.consumer.StickyAssignor");
       //設定groupid
-      properties.put(ConsumerConfig.GROUP_ID_CONFIG, "test");
+      properties.put(ConsumerConfig.GROUP_ID_CONFIG, "test2");
 
    }
 
@@ -107,7 +107,4 @@ public class ConsumerTest {
          }
       }
    }
-
-
-
 }
