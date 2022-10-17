@@ -21,7 +21,7 @@ class CustomProducer {
         //設定
         Properties properties = new Properties();
         //連接集群
-        properties.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "K3:9092,K5:9092");
+        properties.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "K4:9092");
         //設定序列化
         properties.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
         properties.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
@@ -47,7 +47,7 @@ class CustomProducer {
         //設定
         Properties properties = new Properties();
         //連接集群
-        properties.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "K3:9092,K5:9092");
+        properties.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "K4:9092");
         //設定序列化
         properties.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
         properties.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
@@ -79,7 +79,7 @@ class CustomProducer {
         //設定
         Properties properties = new Properties();
         //連接集群
-        properties.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "K3:9092,K5:9092");
+        properties.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "K4:9092");
         //設定序列化
         properties.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
         properties.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
@@ -112,7 +112,7 @@ class CustomProducer {
         //設定
         Properties properties = new Properties();
         //連接集群
-        properties.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "K3:9092,K5:9092");
+        properties.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "K4:9092");
         //設定序列化
         properties.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
         properties.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
@@ -147,7 +147,7 @@ class CustomProducer {
         //設定
         Properties properties = new Properties();
         //連接集群
-        properties.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "K3:9092,K5:9092");
+        properties.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "K4:9092");
         //設定序列化
         properties.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
         properties.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
@@ -187,7 +187,7 @@ class CustomProducer {
         //設定
         Properties properties = new Properties();
         //連接集群
-        properties.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "K3:9092,K5:9092");
+        properties.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "K4:9092");
         //設定序列化
         properties.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
         properties.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
